@@ -1,0 +1,116 @@
+.flight-app {
+  background-color: #596d87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #0e2a4e;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center; /* Center the logo */
+}
+
+.logo {
+  width: 140px;
+  max-width: 100%;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Inria Serif, sans-serif;
+  padding: 8px 12px;border: 1px solid #0e2a4e;
+  border-radius: 15px;
+  color: #0e2a4e;
+}
+
+.home-button-bg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-button-text {
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.flight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap:100px;
+  justify-items: center; /* Center items horizontally */
+}
+
+.flight-card {
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding: 15px;
+  text-align: center; /* Center text */
+}
+
+.flight-image {
+  width: 100%;
+  max-width: 200px; /* Smaller image size */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.flight-details {
+  text-align: center;
+}
+
+.flight-price {
+  color: #0e2a4e;
+  font-weight: bold;
+}
+
+.flight-date {
+  font-size: 10px;
+  color: #0e2a4e;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.book-now-button {
+  align-self: center;
+  border-radius: 15px;
+  border: 1px solid #0e2a4e;
+  background-color: #0e2a4e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: Inria Serif, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom

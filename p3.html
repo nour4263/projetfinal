@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p3.css">
+</head>
+<body>
+    <section class="reservation-container">
+        <form class="reservation-form">
+            <div class="trip-type">
+                <button type="button" class="round-trip">Aller-Retour</button>
+                <button type="button" class="one-way">Aller simple</button>
+            </div>
+            <hr class="divider" />
+            <hr class="divider" />
+            <div class="city-selection">
+                <div class="city-box">
+                    <label for="departure" class="city-label">Ville de départ</label>
+                    <input type="text" id="departure" class="city-input" placeholder="Ville de départ" />
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5843265e4714c4c1e1c1040fcd110dbe319d84a4df5d8dd617d7cfbe79b9e63c?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Swap cities" class="swap-icon" />
+                <div class="city-box">
+                    <label for="arrival" class="city-label">Ville d'arrivée</label>
+                    <input type="text" id="arrival" class="city-input" placeholder="Ville d'arrivée" />
+                </div>
+            </div>
+            <div class="search-buttons">
+                <button type="button" class="search-btn search-btn-primary">Recherche</button>
+                <button type="button" class="search-btn search-btn-secondary">Recherche</button>
+            </div>
+            <hr class="divider" />
+            <div class="date-selection">
+                <div class="date-picker">
+                    <span class="date-label">Date</span>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b6291b6e55c802429ebbba7d9844a44947426d342f63264eb9e3669c8014279?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Calendar" class="calendar-icon" />
+                </div>
+                <button type="button" class="date-part">Jour</button>
+                <button type="button" class="date-part">Mois</button>
+                <button type="button" class="date-part">Année</button>
+            </div>
+            <hr class="divider" />
+            <div class="passengers">
+                <label for="passenger-count" class="passenger-label">Nombre de personnes</label>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1941524cb6ba178a5eb22aae054661d4ac01c4532811d2adb79cfb6ff1daa0f3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Passenger selector" class="passenger-selector" id="passenger-count" />
+            </div>
+            <hr class="divider" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ddd85f180e2f887d15adac2d0145b758f35deff3e7813860bff08df7598c2e3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="" class="divider" />
+            <div class="reservation-options">
+                <span class="option-btn option-btn-primary">Réservation</span>
+                <button type="button" class="option-btn option-btn-secondary">Oui</button>
+                <button type="button" class="option-btn option-btn-secondary">Non</button>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ddd85f180e2f887d15adac2d0145b758f35deff3e7813860bff08df7598c2e3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="" class="divider" />
+            <div class="action-buttons">
+                <button type="submit" class="confirm-btn">Confirmer votre réservation</button>
+                <button type="button" class="cancel-btn">Annuler</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
