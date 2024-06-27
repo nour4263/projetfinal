@@ -3,7 +3,7 @@
 
       const getInputValues = (e) => {
         e.preventDefault()
-        alert("hello")
+        alert("votre réservation est comfirmée")
         const values = {};
         inputs.forEach(input => {
           values[input.id] = input.value;
