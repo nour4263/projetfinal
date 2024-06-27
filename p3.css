@@ -9,30 +9,33 @@ body {
   background-color: #0e2a4e; /* Blue background covering the whole screen */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .reservation-container {
-  background-color: #0e2a4e;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 16px;
   font-weight: 400;
   padding: 20px;
   width: 100%;
-  max-width: 800px; /* Adjusted for larger screens */
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   align-items: center;
   justify-content: center;
+  border: 1px solid #0e2a4e;
+  max-width: 700px; /* Adjusted for larger screens */
 }
 
 .reservation-form {
-  border-radius: 15px;
-  border: 1px solid #0e2a4e;
   background-color: #fff;
   display: flex;
   width: 100%;
-  max-width: 700px; /* Adjusted for larger screens */
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -45,7 +48,8 @@ body {
   padding: 10px;
 }
 
-.round-trip, .one-way {
+.round-trip,
+.one-way {
   font-family: Inria Serif, sans-serif;
   border-radius: 15px;
   border: 1px solid #0e2a4e;
@@ -73,9 +77,8 @@ body {
 
 .city-selection {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   color: #0e2a4e;
-  justify-content: first baseline;
   width: 100%;
 }
 
@@ -83,12 +86,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 10px;
+}
+
+.city-box:last-child {
+  margin-right: 0;
 }
 
 .city-label {
   margin-bottom: 5px;
   font-family: Inria Serif, sans-serif;
   color: #0e2a4e;
+}
+form div{
+  display: flex;
+  justify-content: space-between;
 }
 
 .city-input {
@@ -97,7 +109,6 @@ body {
   border: 1px solid #0e2a4e;
   background-color: #fff;
   padding: 12px 15px;
-  width: 100%;
 }
 
 .swap-icon {
@@ -132,7 +143,6 @@ body {
 .search-btn-secondary {
   background-color: #fff;
   color: #0e2a4e;
-  
 }
 
 .date-selection {
@@ -201,7 +211,7 @@ body {
   color: #0e2a4e;
 }
 
-.option-btn {
+input {
   font-family: Inria Serif, sans-serif;
   border-radius: 15px;
   border: 1px solid #0e2a4e;
@@ -227,7 +237,8 @@ body {
   width: 100%;
 }
 
-.confirm-btn, .cancel-btn {
+.confirm-btn,
+.cancel-btn {
   font-family: Inria Serif, sans-serif;
   border-radius: 15px;
   border: 1px solid #0e2a4e;

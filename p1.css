@@ -1,121 +1,101 @@
-/* Reset default margin and padding */
-* {
+body, html {
     margin: 0;
     padding: 0;
-}
-
-body {
-  background-color: red; /* Light gray background */
+    font-family: Arial, sans-serif;
+  }
   
-  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/f4c29fddf5609b7f359363d1bc070296aa40d4818d69cbc9decfa7c8458173a9?apiKey=016541497ad648c88343efbdc94a7e81&');
-  font-family: 'Arial', sans-serif; /* Replace with your preferred font family */
-}
-
-.travel-container {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  .travel-container {
     position: relative;
-    max-width: 100%; /* Full width */
-    min-height: 100vh; /* Full viewport height */
-    background-color: #fff; /* White background */
-}
-
-.background-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image {
     position: absolute;
-    inset: 0; 
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    object-position: center;
-    z-index: auto; /* Push behind other content */
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect for modern browsers */
-}
-
-.logo {
-    width: 120px; /* Adjust logo size */
-}
-
-.nav-button,
-.reserve-button {
-    padding: 10px 20px; /* Adjust button padding */
-    font-size: 14px; /* Adjust font size */
-    background-color: #0e2a4e; /* Dark blue background */
-    color: #fff; /* White text */
-    border: none;
-    border-radius: 15px; /* Rounded corners */
-}
-
-.secondary-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect for modern browsers */
-}
-
-.home-button,
-.search-button {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 15px; /* Adjust button padding */
-    font-size: 12px; /* Adjust font size */
-    background-color: #0e2a4e; /* Dark blue background */
-    color: #fff; /* White text */
-    border: none;
-    border-radius: 15px; /* Rounded corners */
-}
-
-.main-content {
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9; /* Makes sure the content is visible over the image */
+  }
+  
+  .header-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the size of the logo */
+    margin-bottom: 10px;
+  }
+  
+  .nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-bar li {
+    display: inline;
+  }
+  
+  .nav-button {
+    background-color: #0e2a4e;
+    color: white;
+    font-size:20px ;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 35px;
+  }
+  
+  .nav-button a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .main-content {
     padding: 20px;
-}
-
-.intro-text {
     text-align: center;
-    max-width: 800px; /* Adjust maximum width as needed */
-    font-size: 16px; /* Adjust font size */
-    line-height: 1.5; /* Adjust line height */
-    color: #333; /* Dark text color */
-}
-
-.info-card,
-.offer-card,
-.tip-card {
-    width: 100%;
-    max-width: 800px; /* Adjust maximum width as needed */
+  }
+  
+  .intro-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color:rgba(255, 255, 255, 0.493) ;
+    border-radius: 10px;
     padding: 20px;
-    margin-top: 20px; /* Space between cards */
-    border-radius: 15px;
-    background-color: #fff; /* White background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for cards */
-}
-
-.info-card-title,
-.offer-card-title,
-.tip-card-title {
-    font-weight: 700;
-    font-size: 18px; /* Adjust title font size */
-    color: #0e2a4e; /* Dark blue text */
-    margin-bottom: 10px; /* Adjust margin as needed */
-}
-
-.info-card-content,
-.offer-card-content,
-.tip-card-content {
-    font-size: 14px; /* Adjust content font size */
-    color: #333; /* Dark text color */
-}
+  }
+  
+  .content-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .info-card, .offer-card, .tip-card {
+    background: rgba(255, 255, 255, 0.493);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .info-card-title, .offer-card-title, .tip-card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-card-content, .offer-card-content, .tip-card-content {
+    font-size: 16px;
+  }

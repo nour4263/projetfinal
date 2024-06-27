@@ -3,61 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservation Form</title>
     <link rel="stylesheet" href="p3.css">
 </head>
 <body>
     <section class="reservation-container">
         <form class="reservation-form">
             <div class="trip-type">
-                <button type="button" class="round-trip">Aller-Retour</button>
-                <button type="button" class="one-way">Aller simple</button>
+                <input type="button" value="Aller-Retour" id="Aller-Retour" class="round-trip">
+                <input type="button" value="Aller-simple" id ="Aller-simple" class="one-way">
             </div>
-            <hr class="divider" />
-            <hr class="divider" />
+            <hr class="divider">
             <div class="city-selection">
                 <div class="city-box">
                     <label for="departure" class="city-label">Ville de départ</label>
-                    <input type="text" id="departure" class="city-input" placeholder="Ville de départ" />
+                    <input type="text" id="departure" class="city-input" placeholder="Ville de départ">
                 </div>
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5843265e4714c4c1e1c1040fcd110dbe319d84a4df5d8dd617d7cfbe79b9e63c?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Swap cities" class="swap-icon" />
+                <div class="city-box">
+                    <img src="data:image/jpeg;base64,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" alt="Swap cities" class="swap-icon">
+                </div>
                 <div class="city-box">
                     <label for="arrival" class="city-label">Ville d'arrivée</label>
-                    <input type="text" id="arrival" class="city-input" placeholder="Ville d'arrivée" />
+                    <input type="text" id="arrival" class="city-input" placeholder="Ville d'arrivée">
                 </div>
             </div>
-            <div class="search-buttons">
-                <button type="button" class="search-btn search-btn-primary">Recherche</button>
-                <button type="button" class="search-btn search-btn-secondary">Recherche</button>
-            </div>
-            <hr class="divider" />
+            <hr class="divider">
             <div class="date-selection">
-                <div class="date-picker">
-                    <span class="date-label">Date</span>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b6291b6e55c802429ebbba7d9844a44947426d342f63264eb9e3669c8014279?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Calendar" class="calendar-icon" />
-                </div>
-                <button type="button" class="date-part">Jour</button>
-                <button type="button" class="date-part">Mois</button>
-                <button type="button" class="date-part">Année</button>
+                    <label class="date-label">Date</label>
+                    <input type="date" name="date" id="date">
             </div>
-            <hr class="divider" />
+            <hr class="divider">
             <div class="passengers">
                 <label for="passenger-count" class="passenger-label">Nombre de personnes</label>
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1941524cb6ba178a5eb22aae054661d4ac01c4532811d2adb79cfb6ff1daa0f3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="Passenger selector" class="passenger-selector" id="passenger-count" />
+                <input type="number" name="number-people" placeholder="number of">
             </div>
-            <hr class="divider" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ddd85f180e2f887d15adac2d0145b758f35deff3e7813860bff08df7598c2e3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="" class="divider" />
-            <div class="reservation-options">
-                <span class="option-btn option-btn-primary">Réservation</span>
-                <button type="button" class="option-btn option-btn-secondary">Oui</button>
-                <button type="button" class="option-btn option-btn-secondary">Non</button>
-            </div>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ddd85f180e2f887d15adac2d0145b758f35deff3e7813860bff08df7598c2e3?apiKey=016541497ad648c88343efbdc94a7e81&" alt="" class="divider" />
+            <hr class="divider">
             <div class="action-buttons">
-                <button type="submit" class="confirm-btn">Confirmer votre réservation</button>
-                <button type="button" class="cancel-btn">Annuler</button>
+                <button type="submit" class="confirm-btn">Réserver maintenant</button>
             </div>
         </form>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+// Selecting the buttons
+const roundTripButton = document.querySelector('.round-trip');
+const oneWayButton = document.querySelector('.one-way');
+
+// Adding click event listeners
+roundTripButton.addEventListener('click', function() {
+    roundTripButton.style.backgroundColor = '#0e2a4e';
+    roundTripButton.style.color = '#fff';
+    oneWayButton.style.backgroundColor = '#fff';
+    oneWayButton.style.color = '#0e2a4e';
+});
+
+oneWayButton.addEventListener('click', function() {
+    oneWayButton.style.backgroundColor = '#0e2a4e';
+    oneWayButton.style.color = '#fff';
+    roundTripButton.style.backgroundColor = '#fff';
+    roundTripButton.style.color = '#0e2a4e';
+});
+onst jourButton = document.querySelector('.date-part:nth-child(1)');
+
+jourButton.addEventListener('click', function() {
+    const userInput = prompt('Entrez un jour (1-31) :');
+    // Validate userInput and handle accordingly
+    // For simplicity, let's assume direct assignment to a placeholder element
+    jourButton.textContent = userInput;
+});
+const moisButton = document.querySelector('.date-part:nth-child(2)');
+
+moisButton.addEventListener('click', function() {
+    const userInput = prompt('Entrez un mois (1-12) :');
+    // Validate userInput and handle accordingly
+    // For simplicity, let's assume direct assignment to a placeholder element
+    moisButton.textContent = userInput;
+});
+const anneeButton = document.querySelector('.date-part:nth-child(3)');
+
+anneeButton.addEventListener('click', function() {
+    const userInput = prompt('Entrez une année (2024-2034) :');
+    // Validate userInput and handle accordingly
+    // For simplicity, let's assume direct assignment to a placeholder element
+    anneeButton.textContent = userInput;
+});
+const zeroButton = document.querySelector('.option-btn:nth-child(2)');
+
+zeroButton.addEventListener('click', function() {
+    const userInput = prompt('Entrez un nombre (1-10) :');
+    // Validate userInput and handle accordingly
+    // For simplicity, let's assume direct assignment to a placeholder element
+    zeroButton.textContent = userInput;
+});
+const reservationButton = document.querySelector('.option-btn-primary');
+const ouiButton = document.querySelector('.option-btn:nth-child(2)');
+const nonButton = document.querySelector('.option-btn:nth-child(3)');
+
+ouiButton.addEventListener('click', function() {
+    ouiButton.style.backgroundColor = reservationButton.style.backgroundColor;
+    ouiButton.style.color = reservationButton.style.color;
+});
+
+nonButton.addEventListener('click', function() {
+    nonButton.style.backgroundColor = reservationButton.style.backgroundColor;
+    nonButton.style.color = reservationButton.style.color;
+});
+const confirmButton = document.querySelector('.confirm-btn');
+const cancelButton = document.querySelector('.cancel-btn');
+
+confirmButton.addEventListener('click', function() {
+    confirmButton.style.backgroundColor = cancelButton.style.backgroundColor;
+    confirmButton.style.color = cancelButton.style.color;
+});
+
+cancelButton.addEventListener('click', function() {
+    cancelButton.style.backgroundColor = confirmButton.style.backgroundColor;
+    cancelButton.style.color = confirmButton.style.color;
+});
